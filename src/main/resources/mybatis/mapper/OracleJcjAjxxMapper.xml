@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gaeainfo.ic.mapper.mapper4.OracleJcjAjxxMapper">
+    <insert id="save" parameterType="com.gaeainfo.ic.entity.JcjAjxx">
+    INSERT INTO
+    jcj_ajxx_new
+    (id,jlzt,cszt,sjc,ajbh,jjjl_id,blajbh,lajjxh,zgjgbh,ywqkdm,xzqybh,jzjglxdm,lafsdm,lasj,afdz,ajlxdm,gis_x,gis_y,ajdjdm,czdxdm,bcxx
+,zysx,qxxxms,lfcs,jsmlsj,cdsj,ddxcsj,zdzksj,dccssj,hskzsj,jbpmsj,gdsj,rslc,zdyrs,ccrs,ssrs,jcrs,qzswrs,bdswrs,zhyy,sshrs,bdssrs,rsmj,bhmj,ccss
+,zzbh,bz,ajztdm,ajxz,hbzt,zddwid,rybgs,jjyxm,zhcs,hzsj,xdsj,jssj,bsxfjgdm,zqlyxfjgdm,syxx,jjts,pptz,zdmc)
+    VALUES
+    (#{id,jdbcType=VARCHAR}, #{jlzt,jdbcType=VARCHAR}, #{cszt,jdbcType=VARCHAR}, #{sjc,jdbcType=VARCHAR}, #{ajbh,jdbcType=VARCHAR}, #{jjjlId,jdbcType=VARCHAR}, #{blajbh,jdbcType=VARCHAR}, #{lajjxh,jdbcType=VARCHAR}, #{zgjgbh,jdbcType=VARCHAR}, #{ywqkdm,jdbcType=VARCHAR}, #{xzqybh,jdbcType=VARCHAR}, #{jzjglxdm,jdbcType=VARCHAR}, #{lafsdm,jdbcType=VARCHAR}, #{lasj,jdbcType=VARCHAR}, #{afdz,jdbcType=VARCHAR}, #{ajlxdm,jdbcType=VARCHAR}, #{gisX,jdbcType=VARCHAR}, #{gisY,jdbcType=VARCHAR}, #{ajdjdm,jdbcType=VARCHAR}, #{czdxdm,jdbcType=VARCHAR}, #{bcxx
+,jdbcType=VARCHAR}, #{zysx,jdbcType=VARCHAR}, #{qxxxms,jdbcType=VARCHAR}, #{lfcs,jdbcType=VARCHAR}, #{jsmlsj,jdbcType=VARCHAR}, #{cdsj,jdbcType=VARCHAR}, #{ddxcsj,jdbcType=VARCHAR}, #{zdzksj,jdbcType=VARCHAR}, #{dccssj,jdbcType=VARCHAR}, #{hskzsj,jdbcType=VARCHAR}, #{jbpmsj,jdbcType=VARCHAR}, #{gdsj,jdbcType=VARCHAR}, #{rslc,jdbcType=VARCHAR}, #{zdyrs,jdbcType=VARCHAR}, #{ccrs,jdbcType=VARCHAR}, #{ssrs,jdbcType=VARCHAR}, #{jcrs,jdbcType=VARCHAR}, #{qzswrs,jdbcType=VARCHAR}, #{bdswrs,jdbcType=VARCHAR}, #{zhyy,jdbcType=VARCHAR}, #{sshrs,jdbcType=VARCHAR}, #{bdssrs,jdbcType=VARCHAR}, #{rsmj,jdbcType=VARCHAR}, #{bhmj,jdbcType=VARCHAR}, #{ccss
+,jdbcType=VARCHAR}, #{zzbh,jdbcType=VARCHAR}, #{bz,jdbcType=VARCHAR}, #{ajztdm,jdbcType=VARCHAR}, #{ajxz,jdbcType=VARCHAR}, #{hbzt,jdbcType=VARCHAR}, #{zddwid,jdbcType=VARCHAR}, #{rybgs,jdbcType=VARCHAR}, #{jjyxm,jdbcType=VARCHAR}, #{zhcs,jdbcType=VARCHAR}, #{hzsj,jdbcType=VARCHAR}, #{xdsj,jdbcType=VARCHAR}, #{jssj,jdbcType=VARCHAR}, #{bsxfjgdm,jdbcType=VARCHAR}, #{zqlyxfjgdm,jdbcType=VARCHAR}, #{syxx,jdbcType=VARCHAR}, #{jjts,jdbcType=VARCHAR}, #{pptz,jdbcType=VARCHAR}, #{zdmc,jdbcType=VARCHAR})
+    </insert>
+
+
+    <insert id="saveAll" parameterType="java.util.List">
+        insert into jcj_ajxx_new
+        (id,jlzt,cszt,sjc,ajbh,jjjl_id,blajbh,lajjxh,zgjgbh,ywqkdm,xzqybh,jzjglxdm,lafsdm,lasj,afdz,ajlxdm,gis_x,gis_y,ajdjdm,czdxdm,bcxx
+        ,zysx,qxxxms,lfcs,jsmlsj,cdsj,ddxcsj,zdzksj,dccssj,hskzsj,jbpmsj,gdsj,rslc,zdyrs,ccrs,ssrs,jcrs,qzswrs,bdswrs,zhyy,sshrs,bdssrs,rsmj,bhmj,ccss
+        ,zzbh,bz,ajztdm,ajxz,hbzt,zddwid,rybgs,jjyxm,zhcs,hzsj,xdsj,jssj,bsxfjgdm,zqlyxfjgdm,syxx,jjts,pptz,zdmc)
+        <foreach collection="list" item="item" index="index" separator="UNION ALL">
+            SELECT
+            #{item.id,jdbcType=VARCHAR}, #{item.jlzt,jdbcType=VARCHAR}, #{item.cszt,jdbcType=VARCHAR},
+            #{item.sjc,jdbcType=VARCHAR}, #{item.ajbh,jdbcType=VARCHAR}, #{item.jjjlId,jdbcType=VARCHAR},
+            #{item.blajbh,jdbcType=VARCHAR}, #{item.lajjxh,jdbcType=VARCHAR}, #{item.zgjgbh,jdbcType=VARCHAR},
+            #{item.ywqkdm,jdbcType=VARCHAR}, #{item.xzqybh,jdbcType=VARCHAR}, #{item.jzjglxdm,jdbcType=VARCHAR},
+            #{item.lafsdm,jdbcType=VARCHAR}, #{item.lasj,jdbcType=VARCHAR}, #{item.afdz,jdbcType=VARCHAR},
+            #{item.ajlxdm,jdbcType=VARCHAR}, #{item.gisX,jdbcType=VARCHAR}, #{item.gisY,jdbcType=VARCHAR},
+            #{item.ajdjdm,jdbcType=VARCHAR}, #{item.czdxdm,jdbcType=VARCHAR}, #{item.bcxx
+,jdbcType=VARCHAR}, #{item.zysx,jdbcType=VARCHAR}, #{item.qxxxms,jdbcType=VARCHAR}, #{item.lfcs,jdbcType=VARCHAR},
+            #{item.jsmlsj,jdbcType=VARCHAR}, #{item.cdsj,jdbcType=VARCHAR}, #{item.ddxcsj,jdbcType=VARCHAR},
+            #{item.zdzksj,jdbcType=VARCHAR}, #{item.dccssj,jdbcType=VARCHAR}, #{item.hskzsj,jdbcType=VARCHAR},
+            #{item.jbpmsj,jdbcType=VARCHAR}, #{item.gdsj,jdbcType=VARCHAR}, #{item.rslc,jdbcType=VARCHAR},
+            #{item.zdyrs,jdbcType=VARCHAR}, #{item.ccrs,jdbcType=VARCHAR}, #{item.ssrs,jdbcType=VARCHAR},
+            #{item.jcrs,jdbcType=VARCHAR}, #{item.qzswrs,jdbcType=VARCHAR}, #{item.bdswrs,jdbcType=VARCHAR},
+            #{item.zhyy,jdbcType=VARCHAR}, #{item.sshrs,jdbcType=VARCHAR}, #{item.bdssrs,jdbcType=VARCHAR},
+            #{item.rsmj,jdbcType=VARCHAR}, #{item.bhmj,jdbcType=VARCHAR}, #{item.ccss
+,jdbcType=VARCHAR}, #{item.zzbh,jdbcType=VARCHAR}, #{item.bz,jdbcType=VARCHAR}, #{item.ajztdm,jdbcType=VARCHAR},
+            #{item.ajxz,jdbcType=VARCHAR}, #{item.hbzt,jdbcType=VARCHAR}, #{item.zddwid,jdbcType=VARCHAR},
+            #{item.rybgs,jdbcType=VARCHAR}, #{item.jjyxm,jdbcType=VARCHAR}, #{item.zhcs,jdbcType=VARCHAR},
+            #{item.hzsj,jdbcType=VARCHAR}, #{item.xdsj,jdbcType=VARCHAR}, #{item.jssj,jdbcType=VARCHAR},
+            #{item.bsxfjgdm,jdbcType=VARCHAR}, #{item.zqlyxfjgdm,jdbcType=VARCHAR}, #{item.syxx,jdbcType=VARCHAR},
+            #{item.jjts,jdbcType=VARCHAR}, #{item.pptz,jdbcType=VARCHAR}, #{item.zdmc,jdbcType=VARCHAR}
+            FROM dual
+        </foreach>
+    </insert>
+    <insert id="saveJdjcjl" parameterType="com.gaeainfo.ic.entity.Jdjcjl">
+        INSERT INTO
+        XFJD_FLWSJ_JDJCJL
+        (id,itembh,jcms,jcxslb,jcxsmc,wh1,wh2,wh3,wh4,wh,gaj,bcdw,dwmc,dwdz,sfaqzrr,zrrlxdh,xfaqglr,
+        glrdh,lxr,lxrdh,dwxzbh,dwxzmc,xfjdjcy,jcqstime,jcjstime,stjcry,zgry,jzmj,jzcs,jzgd,wfxw,clqk,
+        pass,isflws,isfc,remark,spacc,spname,sptime,zgdwid,acc,accname,intime,inip,chgacc,chgaccname,
+        chgtime,chgip,versionnumber,deleted,sparefiled1,sparefiled2,sparefiled3,sparefiled4,sparefiled5,
+        yxmjzrq,ytxjzrq,row_version,frdb,lawid,zdmc)
+        VALUES
+        (#{id,jdbcType=VARCHAR}, #{itembh,jdbcType=VARCHAR}, #{jcms,jdbcType=VARCHAR}, #{jcxslb,jdbcType=VARCHAR},
+        #{jcxsmc,jdbcType=VARCHAR}, #{wh1,jdbcType=VARCHAR}, #{wh2,jdbcType=VARCHAR}, #{wh3,jdbcType=VARCHAR},
+        #{wh4,jdbcType=VARCHAR}, #{wh,jdbcType=VARCHAR}, #{gaj,jdbcType=VARCHAR}, #{bcdw,jdbcType=VARCHAR},
+        #{dwmc,jdbcType=VARCHAR}, #{dwdz,jdbcType=VARCHAR}, #{sfaqzrr,jdbcType=VARCHAR}, #{zrrlxdh,jdbcType=VARCHAR},
+        #{xfaqglr,jdbcType=VARCHAR}, #{glrdh,jdbcType=VARCHAR}, #{lxr,jdbcType=VARCHAR}, #{lxrdh,jdbcType=VARCHAR},
+        #{dwxzbh,jdbcType=VARCHAR}, #{dwxzmc,jdbcType=VARCHAR}, #{xfjdjcy,jdbcType=VARCHAR}, #{jcqstime,jdbcType=TIMESTAMP},
+        #{jcjstime,jdbcType=TIMESTAMP}, #{stjcry,jdbcType=VARCHAR}, #{zgry,jdbcType=VARCHAR}, #{jzmj,jdbcType=VARCHAR},
+        #{jzcs,jdbcType=VARCHAR}, #{jzgd,jdbcType=VARCHAR}, #{wfxw,jdbcType=VARCHAR}, #{clqk,jdbcType=VARCHAR},
+        #{pass,jdbcType=VARCHAR}, #{isflws,jdbcType=VARCHAR}, #{isfc,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},
+        #{spacc,jdbcType=VARCHAR}, #{spname,jdbcType=VARCHAR}, #{sptime,jdbcType=TIMESTAMP}, #{zgdwid,jdbcType=VARCHAR},
+        #{acc,jdbcType=VARCHAR}, #{accname,jdbcType=VARCHAR}, #{intime,jdbcType=TIMESTAMP}, #{inip,jdbcType=VARCHAR},
+        #{chgacc,jdbcType=VARCHAR}, #{chgaccname,jdbcType=VARCHAR}, #{chgtime,jdbcType=TIMESTAMP}, #{chgip,jdbcType=VARCHAR},
+        #{versionnumber,jdbcType=VARCHAR}, #{deleted,jdbcType=VARCHAR}, #{sparefiled1,jdbcType=VARCHAR},
+        #{sparefiled2,jdbcType=VARCHAR}, #{sparefiled3,jdbcType=VARCHAR}, #{sparefiled4,jdbcType=VARCHAR},
+        #{sparefiled5,jdbcType=TIMESTAMP}, #{yxmjzrq,jdbcType=TIMESTAMP}, #{ytxjzrq,jdbcType=TIMESTAMP},
+        #{rowVersion,jdbcType=VARCHAR}, #{frdb,jdbcType=VARCHAR}, #{lawid,jdbcType=VARCHAR}, #{zdmc,jdbcType=VARCHAR})
+    </insert>
+    <insert id="saveAllJdjcjl" parameterType="java.util.List">
+        insert into XFJD_FLWSJ_JDJCJL
+        (id,itembh,jcms,jcxslb,jcxsmc,wh1,wh2,wh3,wh4,wh,gaj,bcdw,dwmc,dwdz,sfaqzrr,zrrlxdh,xfaqglr,
+        glrdh,lxr,lxrdh,dwxzbh,dwxzmc,xfjdjcy,jcqstime,jcjstime,stjcry,zgry,jzmj,jzcs,jzgd,wfxw,clqk,
+        pass,isflws,isfc,remark,spacc,spname,sptime,zgdwid,acc,accname,intime,inip,chgacc,chgaccname,
+        chgtime,chgip,versionnumber,deleted,sparefiled1,sparefiled2,sparefiled3,sparefiled4,sparefiled5,
+        yxmjzrq,ytxjzrq,row_version,frdb,lawid,zdmc)
+        select A.* from (
+        <foreach collection="list" item="item" index="index" separator="UNION ALL">
+            SELECT
+            #{item.id,jdbcType=VARCHAR} id ,
+            #{item.itembh,jdbcType=VARCHAR} itembh ,
+            #{item.jcms,jdbcType=VARCHAR} jcms ,
+            #{item.jcxslb,jdbcType=VARCHAR} jcxslb ,
+            #{item.jcxsmc,jdbcType=VARCHAR} jcxsmc ,
+            #{item.wh1,jdbcType=VARCHAR} wh1 ,
+            #{item.wh2,jdbcType=VARCHAR} wh2 ,
+            #{item.wh3,jdbcType=VARCHAR} wh3 ,
+            #{item.wh4,jdbcType=VARCHAR} wh4 ,
+            #{item.wh,jdbcType=VARCHAR} wh ,
+            #{item.gaj,jdbcType=VARCHAR} gaj ,
+            #{item.bcdw,jdbcType=VARCHAR} bcdw ,
+            #{item.dwmc,jdbcType=VARCHAR} dwmc ,
+            #{item.dwdz,jdbcType=VARCHAR} dwdz ,
+            #{item.sfaqzrr,jdbcType=VARCHAR} sfaqzrr ,
+            #{item.zrrlxdh,jdbcType=VARCHAR} zrrlxdh ,
+            #{item.xfaqglr,jdbcType=VARCHAR} xfaqglr ,
+            #{item.glrdh,jdbcType=VARCHAR} glrdh ,
+            #{item.lxr,jdbcType=VARCHAR} lxr ,
+            #{item.lxrdh,jdbcType=VARCHAR} lxrdh ,
+            #{item.dwxzbh,jdbcType=VARCHAR} dwxzbh ,
+            #{item.dwxzmc,jdbcType=VARCHAR} dwxzmc ,
+            #{item.xfjdjcy,jdbcType=VARCHAR} xfjdjcy ,
+            #{item.jcqstime,jdbcType=TIMESTAMP} jcqstime ,
+            #{item.jcjstime,jdbcType=TIMESTAMP} jcjstime ,
+            #{item.stjcry,jdbcType=VARCHAR} stjcry ,
+            #{item.zgry,jdbcType=VARCHAR} zgry ,
+            #{item.jzmj,jdbcType=VARCHAR} jzmj ,
+            #{item.jzcs,jdbcType=VARCHAR} jzcs ,
+            #{item.jzgd,jdbcType=VARCHAR} jzgd ,
+            #{item.wfxw,jdbcType=VARCHAR} wfxw ,
+            #{item.clqk,jdbcType=VARCHAR} clqk ,
+            #{item.pass,jdbcType=VARCHAR} pass ,
+            #{item.isflws,jdbcType=VARCHAR} isflws ,
+            #{item.isfc,jdbcType=VARCHAR} isfc ,
+            #{item.remark,jdbcType=VARCHAR} remark ,
+            #{item.spacc,jdbcType=VARCHAR} spacc ,
+            #{item.spname,jdbcType=VARCHAR} spname ,
+            #{item.sptime,jdbcType=TIMESTAMP} sptime ,
+            #{item.zgdwid,jdbcType=VARCHAR} zgdwid ,
+            #{item.acc,jdbcType=VARCHAR} acc ,
+            #{item.accname,jdbcType=VARCHAR} accname ,
+            #{item.intime,jdbcType=TIMESTAMP} intime ,
+            #{item.inip,jdbcType=VARCHAR} inip ,
+            #{item.chgacc,jdbcType=VARCHAR} chgacc ,
+            #{item.chgaccname,jdbcType=VARCHAR} chgaccname ,
+            #{item.chgtime,jdbcType=TIMESTAMP} chgtime ,
+            #{item.chgip,jdbcType=VARCHAR} chgip ,
+            #{item.versionnumber,jdbcType=VARCHAR} versionnumber ,
+            #{item.deleted,jdbcType=VARCHAR} deleted ,
+            #{item.sparefiled1,jdbcType=VARCHAR} sparefiled1 ,
+            #{item.sparefiled2,jdbcType=VARCHAR} sparefiled2 ,
+            #{item.sparefiled3,jdbcType=VARCHAR} sparefiled3 ,
+            #{item.sparefiled4,jdbcType=VARCHAR} sparefiled4 ,
+            #{item.sparefiled5,jdbcType=TIMESTAMP} sparefiled5 ,
+            #{item.yxmjzrq,jdbcType=TIMESTAMP} yxmjzrq ,
+            #{item.ytxjzrq,jdbcType=TIMESTAMP} ytxjzrq ,
+            #{item.rowVersion,jdbcType=VARCHAR} row_version ,
+            #{item.frdb,jdbcType=VARCHAR} frdb ,
+            #{item.lawid,jdbcType=VARCHAR} lawid ,
+            #{item.zdmc,jdbcType=VARCHAR} zdmc
+            FROM dual
+        </foreach>
+        ) A
+    </insert>
+
+    <insert id="saveWfxw" parameterType="com.gaeainfo.ic.entity.Wfxw">
+        INSERT INTO
+        XFJD_FLWSJ_ZLGZTZS_WFXW
+        ( id ,wh1 ,wh2 ,wh3 ,wh4 ,wh ,zlid ,relationitembh ,fcitembh ,dwid ,flwsid ,flwslb ,wfxwmainid ,wfxwsubid ,
+        wfxx ,type ,state ,jcdate ,gzdate ,zgqk ,zgjcyname ,zgllyacc ,zgllyname ,zgintime ,acc ,accname ,intime ,
+        inip ,chgacc ,chgaccname ,chgtime ,zgdwid ,ip ,jcmode ,yhsort ,qybh ,deleted ,sparefiled1 ,sparefiled2 ,
+        sparefiled3 ,sparefiled4 ,sparefiled5 ,sparefiled6 ,sparefiled7 ,zong ,zhi ,ispcs ,row_version ,zdmc)
+        VALUES
+        ( #{id ,jdbcType=VARCHAR}, #{wh1 ,jdbcType=VARCHAR}, #{wh2 ,jdbcType=VARCHAR}, #{wh3 ,jdbcType=VARCHAR}, #{wh4 ,jdbcType=VARCHAR}, #{wh ,jdbcType=VARCHAR}, #{zlid ,jdbcType=VARCHAR}, #{relationitembh ,jdbcType=VARCHAR}, #{fcitembh ,jdbcType=VARCHAR}, #{dwid ,jdbcType=VARCHAR}, #{flwsid ,jdbcType=VARCHAR}, #{flwslb ,jdbcType=VARCHAR}, #{wfxwmainid ,jdbcType=VARCHAR}, #{wfxwsubid ,jdbcType=VARCHAR}, #{
+       wfxx ,jdbcType=VARCHAR}, #{type ,jdbcType=VARCHAR}, #{state ,jdbcType=VARCHAR}, #{jcdate ,jdbcType=VARCHAR}, #{gzdate ,jdbcType=VARCHAR}, #{zgqk ,jdbcType=VARCHAR}, #{zgjcyname ,jdbcType=VARCHAR}, #{zgllyacc ,jdbcType=VARCHAR}, #{zgllyname ,jdbcType=VARCHAR}, #{zgintime ,jdbcType=VARCHAR}, #{acc ,jdbcType=VARCHAR}, #{accname ,jdbcType=VARCHAR}, #{intime ,jdbcType=VARCHAR}, #{
+       inip ,jdbcType=VARCHAR}, #{chgacc ,jdbcType=VARCHAR}, #{chgaccname ,jdbcType=VARCHAR}, #{chgtime ,jdbcType=VARCHAR}, #{zgdwid ,jdbcType=VARCHAR}, #{ip ,jdbcType=VARCHAR}, #{jcmode ,jdbcType=VARCHAR}, #{yhsort ,jdbcType=VARCHAR}, #{qybh ,jdbcType=VARCHAR}, #{deleted ,jdbcType=VARCHAR}, #{sparefiled1 ,jdbcType=VARCHAR}, #{sparefiled2 ,jdbcType=VARCHAR}, #{
+       sparefiled3 ,jdbcType=VARCHAR}, #{sparefiled4 ,jdbcType=VARCHAR}, #{sparefiled5 ,jdbcType=VARCHAR}, #{sparefiled6 ,jdbcType=VARCHAR}, #{sparefiled7 ,jdbcType=VARCHAR}, #{zong ,jdbcType=VARCHAR}, #{zhi ,jdbcType=VARCHAR}, #{ispcs ,jdbcType=VARCHAR}, #{rowVersion ,jdbcType=VARCHAR}, #{zdmc,jdbcType=VARCHAR})
+    </insert>
+    <insert id="saveAllWfxw" parameterType="java.util.List">
+        insert into XFJD_FLWSJ_ZLGZTZS_WFXW
+        ( id ,wh1 ,wh2 ,wh3 ,wh4 ,wh ,zlid ,relationitembh ,fcitembh ,dwid ,flwsid ,flwslb ,wfxwmainid ,wfxwsubid ,
+        wfxx ,type ,state ,jcdate ,gzdate ,zgqk ,zgjcyname ,zgllyacc ,zgllyname ,zgintime ,acc ,accname ,intime ,
+        inip ,chgacc ,chgaccname ,chgtime ,zgdwid ,ip ,jcmode ,yhsort ,qybh ,deleted ,sparefiled1 ,sparefiled2 ,
+        sparefiled3 ,sparefiled4 ,sparefiled5 ,sparefiled6 ,sparefiled7 ,zong ,zhi ,ispcs ,row_version ,zdmc)
+        <foreach collection="list" item="item" index="index" separator="UNION ALL">
+            SELECT
+            #{item.id ,jdbcType=VARCHAR}, #{item.wh1 ,jdbcType=VARCHAR}, #{item.wh2 ,jdbcType=VARCHAR}, #{item.wh3 ,jdbcType=VARCHAR},
+            #{item.wh4 ,jdbcType=VARCHAR}, #{item.wh ,jdbcType=VARCHAR}, #{item.zlid ,jdbcType=VARCHAR},
+            #{item.relationitembh ,jdbcType=VARCHAR}, #{item.fcitembh ,jdbcType=VARCHAR}, #{item.dwid ,jdbcType=VARCHAR},
+            #{item.flwsid ,jdbcType=VARCHAR}, #{item.flwslb ,jdbcType=VARCHAR}, #{item.wfxwmainid ,jdbcType=VARCHAR},
+            #{item.wfxwsubid ,jdbcType=VARCHAR}, #{item.wfxx ,jdbcType=VARCHAR}, #{item.type ,jdbcType=VARCHAR}, #{item.state ,jdbcType=VARCHAR}, #{item.jcdate ,jdbcType=VARCHAR},
+            #{item.gzdate ,jdbcType=VARCHAR}, #{item.zgqk ,jdbcType=VARCHAR}, #{item.zgjcyname ,jdbcType=VARCHAR},
+            #{item.zgllyacc ,jdbcType=VARCHAR}, #{item.zgllyname ,jdbcType=VARCHAR}, #{item.zgintime ,jdbcType=VARCHAR},
+            #{item.acc ,jdbcType=VARCHAR}, #{item.accname ,jdbcType=VARCHAR}, #{item.intime ,jdbcType=VARCHAR}, #{item.inip ,jdbcType=VARCHAR}, #{item.chgacc ,jdbcType=VARCHAR}, #{item.chgaccname ,jdbcType=VARCHAR},
+            #{item.chgtime ,jdbcType=VARCHAR}, #{item.zgdwid ,jdbcType=VARCHAR}, #{item.ip ,jdbcType=VARCHAR},
+            #{item.jcmode ,jdbcType=VARCHAR}, #{item.yhsort ,jdbcType=VARCHAR}, #{item.qybh ,jdbcType=VARCHAR},
+            #{item.deleted ,jdbcType=VARCHAR}, #{item.sparefiled1 ,jdbcType=VARCHAR}, #{item.sparefiled2 ,jdbcType=VARCHAR}, #{item.sparefiled3 ,jdbcType=VARCHAR}, #{item.sparefiled4 ,jdbcType=VARCHAR}, #{item.sparefiled5 ,jdbcType=VARCHAR},
+            #{item.sparefiled6 ,jdbcType=VARCHAR}, #{item.sparefiled7 ,jdbcType=VARCHAR}, #{item.zong ,jdbcType=VARCHAR},
+            #{item.zhi ,jdbcType=VARCHAR}, #{item.ispcs ,jdbcType=VARCHAR}, #{item.rowVersion ,jdbcType=VARCHAR},
+            #{item.zdmc,jdbcType=VARCHAR}
+            FROM dual
+        </foreach>
+    </insert>
+    <insert id="saveAllUser" parameterType="java.util.List">
+        insert into USERTEST
+        ( id ,name)
+        <foreach collection="list" item="item" index="index" separator="UNION ALL">
+            SELECT
+            #{item.id ,jdbcType=VARCHAR}, #{item.name ,jdbcType=VARCHAR}
+            FROM dual
+        </foreach>
+    </insert>
+
+</mapper>

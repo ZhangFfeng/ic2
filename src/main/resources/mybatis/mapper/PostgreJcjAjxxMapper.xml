@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gaeainfo.ic.mapper.mapper3.PostgreJcjAjxxMapper">
+    <resultMap id="BaseResultMap" type="com.gaeainfo.ic.entity.JcjAjxx">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="jlzt" property="jlzt" jdbcType="VARCHAR"/>
+        <result column="cszt" property="cszt" jdbcType="VARCHAR"/>
+        <result column="sjc" property="sjc" jdbcType="VARCHAR"/>
+        <result column="ajbh" property="ajbh" jdbcType="VARCHAR"/>
+        <result column="jjjl_id" property="jjjlId" jdbcType="VARCHAR"/>
+        <result column="blajbh" property="blajbh" jdbcType="VARCHAR"/>
+        <result column="lajjxh" property="lajjxh" jdbcType="VARCHAR"/>
+        <result column="zgjgbh" property="zgjgbh" jdbcType="VARCHAR"/>
+        <result column="ywqkdm" property="ywqkdm" jdbcType="VARCHAR"/>
+        <result column="xzqybh" property="xzqybh" jdbcType="VARCHAR"/>
+        <result column="jzjglxdm" property="jzjglxdm" jdbcType="VARCHAR"/>
+        <result column="lafsdm" property="lafsdm" jdbcType="VARCHAR"/>
+        <result column="lasj" property="lasj" jdbcType="VARCHAR"/>
+        <result column="afdz" property="afdz" jdbcType="VARCHAR"/>
+        <result column="ajlxdm" property="ajlxdm" jdbcType="VARCHAR"/>
+        <result column="gis_x" property="gisX" jdbcType="VARCHAR"/>
+        <result column="gis_y" property="gisY" jdbcType="VARCHAR"/>
+        <result column="ajdjdm" property="ajdjdm" jdbcType="VARCHAR"/>
+        <result column="czdxdm" property="czdxdm" jdbcType="VARCHAR"/>
+        <result column="bcxx" property="bcxx" jdbcType="VARCHAR"/>
+        <result column="zysx" property="zysx" jdbcType="VARCHAR"/>
+        <result column="qxxxms" property="qxxxms" jdbcType="VARCHAR"/>
+        <result column="lfcs" property="lfcs" jdbcType="VARCHAR"/>
+        <result column="jsmlsj" property="jsmlsj" jdbcType="VARCHAR"/>
+        <result column="cdsj" property="cdsj" jdbcType="VARCHAR"/>
+        <result column="ddxcsj" property="ddxcsj" jdbcType="VARCHAR"/>
+        <result column="zdzksj" property="zdzksj" jdbcType="VARCHAR"/>
+        <result column="dccssj" property="dccssj" jdbcType="VARCHAR"/>
+        <result column="hskzsj" property="hskzsj" jdbcType="VARCHAR"/>
+        <result column="jbpmsj" property="jbpmsj" jdbcType="VARCHAR"/>
+        <result column="gdsj" property="gdsj" jdbcType="VARCHAR"/>
+        <result column="rslc" property="rslc" jdbcType="VARCHAR"/>
+        <result column="zdyrs" property="zdyrs" jdbcType="VARCHAR"/>
+        <result column="ccrs" property="ccrs" jdbcType="VARCHAR"/>
+        <result column="ssrs" property="ssrs" jdbcType="VARCHAR"/>
+        <result column="jcrs" property="jcrs" jdbcType="VARCHAR"/>
+        <result column="qzswrs" property="qzswrs" jdbcType="VARCHAR"/>
+        <result column="bdswrs" property="bdswrs" jdbcType="VARCHAR"/>
+        <result column="zhyy" property="zhyy" jdbcType="VARCHAR"/>
+        <result column="sshrs" property="sshrs" jdbcType="VARCHAR"/>
+        <result column="bdssrs" property="bdssrs" jdbcType="VARCHAR"/>
+        <result column="rsmj" property="rsmj" jdbcType="VARCHAR"/>
+        <result column="bhmj" property="bhmj" jdbcType="VARCHAR"/>
+        <result column="ccss" property="ccss" jdbcType="VARCHAR"/>
+        <result column="zzbh" property="zzbh" jdbcType="VARCHAR"/>
+        <result column="bz" property="bz" jdbcType="VARCHAR"/>
+        <result column="ajztdm" property="ajztdm" jdbcType="VARCHAR"/>
+        <result column="ajxz" property="ajxz" jdbcType="VARCHAR"/>
+        <result column="hbzt" property="hbzt" jdbcType="VARCHAR"/>
+        <result column="zddwid" property="zddwid" jdbcType="VARCHAR"/>
+        <result column="rybgs" property="rybgs" jdbcType="VARCHAR"/>
+        <result column="jjyxm" property="jjyxm" jdbcType="VARCHAR"/>
+        <result column="zhcs" property="zhcs" jdbcType="VARCHAR"/>
+        <result column="hzsj" property="hzsj" jdbcType="VARCHAR"/>
+        <result column="xdsj" property="xdsj" jdbcType="VARCHAR"/>
+        <result column="jssj" property="jssj" jdbcType="VARCHAR"/>
+        <result column="bsxfjgdm" property="bsxfjgdm" jdbcType="VARCHAR"/>
+        <result column="zqlyxfjgdm" property="zqlyxfjgdm" jdbcType="VARCHAR"/>
+        <result column="syxx" property="syxx" jdbcType="VARCHAR"/>
+        <result column="jjts" property="jjts" jdbcType="VARCHAR"/>
+        <result column="pptz" property="pptz" jdbcType="VARCHAR"/>
+        <result column="zdmc" property="zdmc" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap id="JdjcjlResultMap" type="com.gaeainfo.ic.entity.Jdjcjl">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="itembh" property="itembh" jdbcType="VARCHAR"/>
+        <result column="jcms" property="jcms" jdbcType="VARCHAR"/>
+        <result column="jcxslb" property="jcxslb" jdbcType="VARCHAR"/>
+        <result column="jcxsmc" property="jcxsmc" jdbcType="VARCHAR"/>
+        <result column="wh1" property="wh1" jdbcType="VARCHAR"/>
+        <result column="wh2" property="wh2" jdbcType="VARCHAR"/>
+        <result column="wh3" property="wh3" jdbcType="VARCHAR"/>
+        <result column="wh4" property="wh4" jdbcType="VARCHAR"/>
+        <result column="wh" property="wh" jdbcType="VARCHAR"/>
+        <result column="gaj" property="gaj" jdbcType="VARCHAR"/>
+        <result column="bcdw" property="bcdw" jdbcType="VARCHAR"/>
+        <result column="dwmc" property="dwmc" jdbcType="VARCHAR"/>
+        <result column="dwdz" property="dwdz" jdbcType="VARCHAR"/>
+        <result column="sfaqzrr" property="sfaqzrr" jdbcType="VARCHAR"/>
+        <result column="zrrlxdh" property="zrrlxdh" jdbcType="VARCHAR"/>
+        <result column="xfaqglr" property="xfaqglr" jdbcType="VARCHAR"/>
+        <result column="glrdh" property="glrdh" jdbcType="VARCHAR"/>
+        <result column="lxr" property="lxr" jdbcType="VARCHAR"/>
+        <result column="lxrdh" property="lxrdh" jdbcType="VARCHAR"/>
+        <result column="dwxzbh" property="dwxzbh" jdbcType="VARCHAR"/>
+        <result column="dwxzmc" property="dwxzmc" jdbcType="VARCHAR"/>
+        <result column="xfjdjcy" property="xfjdjcy" jdbcType="VARCHAR"/>
+        <result column="jcqstime" property="jcqstime" jdbcType="TIMESTAMP"/>
+        <result column="jcjstime" property="jcjstime" jdbcType="TIMESTAMP"/>
+        <result column="stjcry" property="stjcry" jdbcType="VARCHAR"/>
+        <result column="zgry" property="zgry" jdbcType="VARCHAR"/>
+        <result column="jzmj" property="jzmj" jdbcType="VARCHAR"/>
+        <result column="jzcs" property="jzcs" jdbcType="VARCHAR"/>
+        <result column="jzgd" property="jzgd" jdbcType="VARCHAR"/>
+        <result column="wfxw" property="wfxw" jdbcType="VARCHAR"/>
+        <result column="clqk" property="clqk" jdbcType="VARCHAR"/>
+        <result column="pass" property="pass" jdbcType="VARCHAR"/>
+        <result column="isflws" property="isflws" jdbcType="VARCHAR"/>
+        <result column="isfc" property="isfc" jdbcType="VARCHAR"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+        <result column="spacc" property="spacc" jdbcType="VARCHAR"/>
+        <result column="spname" property="spname" jdbcType="VARCHAR"/>
+        <result column="sptime" property="sptime" jdbcType="TIMESTAMP"/>
+        <result column="zgdwid" property="zgdwid" jdbcType="VARCHAR"/>
+        <result column="acc" property="acc" jdbcType="VARCHAR"/>
+        <result column="accname" property="accname" jdbcType="VARCHAR"/>
+        <result column="intime" property="intime" jdbcType="TIMESTAMP"/>
+        <result column="inip" property="inip" jdbcType="VARCHAR"/>
+        <result column="chgacc" property="chgacc" jdbcType="VARCHAR"/>
+        <result column="chgaccname" property="chgaccname" jdbcType="VARCHAR"/>
+        <result column="chgtime" property="chgtime" jdbcType="TIMESTAMP"/>
+        <result column="chgip" property="chgip" jdbcType="VARCHAR"/>
+        <result column="versionnumber" property="versionnumber" jdbcType="VARCHAR"/>
+        <result column="deleted" property="deleted" jdbcType="VARCHAR"/>
+        <result column="sparefiled1" property="sparefiled1" jdbcType="VARCHAR"/>
+        <result column="sparefiled2" property="sparefiled2" jdbcType="VARCHAR"/>
+        <result column="sparefiled3" property="sparefiled3" jdbcType="VARCHAR"/>
+        <result column="sparefiled4" property="sparefiled4" jdbcType="VARCHAR"/>
+        <result column="sparefiled5" property="sparefiled5" jdbcType="TIMESTAMP"/>
+        <result column="yxmjzrq" property="yxmjzrq" jdbcType="TIMESTAMP"/>
+        <result column="ytxjzrq" property="ytxjzrq" jdbcType="TIMESTAMP"/>
+        <result column="row_version" property="rowVersion" jdbcType="VARCHAR"/>
+        <result column="frdb" property="frdb" jdbcType="VARCHAR"/>
+        <result column="lawid" property="lawid" jdbcType="VARCHAR"/>
+        <result column="zdmc" property="zdmc" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap id="WfxwResultMap" type="com.gaeainfo.ic.entity.Wfxw">
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="wh1" property="wh1" jdbcType="VARCHAR"/>
+        <result column="wh2" property="wh2" jdbcType="VARCHAR"/>
+        <result column="wh3" property="wh3" jdbcType="VARCHAR"/>
+        <result column="wh4" property="wh4" jdbcType="VARCHAR"/>
+        <result column="wh" property="wh" jdbcType="VARCHAR"/>
+        <result column="zlid" property="zlid" jdbcType="VARCHAR"/>
+        <result column="relationitembh" property="relationitembh" jdbcType="VARCHAR"/>
+        <result column="fcitembh" property="fcitembh" jdbcType="VARCHAR"/>
+        <result column="dwid" property="dwid" jdbcType="VARCHAR"/>
+        <result column="flwsid" property="flwsid" jdbcType="VARCHAR"/>
+        <result column="flwslb" property="flwslb" jdbcType="VARCHAR"/>
+        <result column="wfxwmainid" property="wfxwmainid" jdbcType="VARCHAR"/>
+        <result column="wfxwsubid" property="wfxwsubid" jdbcType="VARCHAR"/>
+        <result column="wfxx" property="wfxx" jdbcType="VARCHAR"/>
+        <result column="type" property="type" jdbcType="VARCHAR"/>
+        <result column="state" property="state" jdbcType="VARCHAR"/>
+        <result column="jcdate" property="jcdate" jdbcType="VARCHAR"/>
+        <result column="gzdate" property="gzdate" jdbcType="VARCHAR"/>
+        <result column="zgqk" property="zgqk" jdbcType="VARCHAR"/>
+        <result column="zgjcyname" property="zgjcyname" jdbcType="VARCHAR"/>
+        <result column="zgllyacc" property="zgllyacc" jdbcType="VARCHAR"/>
+        <result column="zgllyname" property="zgllyname" jdbcType="VARCHAR"/>
+        <result column="zgintime" property="zgintime" jdbcType="VARCHAR"/>
+        <result column="acc" property="acc" jdbcType="VARCHAR"/>
+        <result column="accname" property="accname" jdbcType="VARCHAR"/>
+        <result column="intime" property="intime" jdbcType="VARCHAR"/>
+        <result column="inip" property="inip" jdbcType="VARCHAR"/>
+        <result column="chgacc" property="chgacc" jdbcType="VARCHAR"/>
+        <result column="chgaccname" property="chgaccname" jdbcType="VARCHAR"/>
+        <result column="chgtime" property="chgtime" jdbcType="VARCHAR"/>
+        <result column="zgdwid" property="zgdwid" jdbcType="VARCHAR"/>
+        <result column="ip" property="ip" jdbcType="VARCHAR"/>
+        <result column="jcmode" property="jcmode" jdbcType="VARCHAR"/>
+        <result column="yhsort" property="yhsort" jdbcType="VARCHAR"/>
+        <result column="qybh" property="qybh" jdbcType="VARCHAR"/>
+        <result column="deleted" property="deleted" jdbcType="VARCHAR"/>
+        <result column="sparefiled1" property="sparefiled1" jdbcType="VARCHAR"/>
+        <result column="sparefiled2" property="sparefiled2" jdbcType="VARCHAR"/>
+        <result column="sparefiled3" property="sparefiled3" jdbcType="VARCHAR"/>
+        <result column="sparefiled4" property="sparefiled4" jdbcType="VARCHAR"/>
+        <result column="sparefiled5" property="sparefiled5" jdbcType="VARCHAR"/>
+        <result column="sparefiled6" property="sparefiled6" jdbcType="VARCHAR"/>
+        <result column="sparefiled7" property="sparefiled7" jdbcType="VARCHAR"/>
+        <result column="zong" property="zong" jdbcType="VARCHAR"/>
+        <result column="zhi" property="zhi" jdbcType="VARCHAR"/>
+        <result column="ispcs" property="ispcs" jdbcType="VARCHAR"/>
+        <result column="row_version" property="rowVersion" jdbcType="VARCHAR"/>
+        <result column="zdmc" property="zdmc" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <sql id="Jcj_Column_List">
+        id,jlzt,cszt,sjc,ajbh,jjjl_id,blajbh,lajjxh,zgjgbh,ywqkdm,xzqybh,jzjglxdm,lafsdm,lasj,afdz,ajlxdm,gis_x,gis_y,ajdjdm,czdxdm,bcxx
+        ,zysx,qxxxms,lfcs,jsmlsj,cdsj,ddxcsj,zdzksj,dccssj,hskzsj,jbpmsj,gdsj,rslc,zdyrs,ccrs,ssrs,jcrs,qzswrs,bdswrs,zhyy,sshrs,bdssrs,rsmj,bhmj,ccss
+        ,zzbh,bz,ajztdm,ajxz,hbzt,zddwid,rybgs,jjyxm,zhcs,hzsj,xdsj,jssj,bsxfjgdm,zqlyxfjgdm,syxx,jjts,pptz,zdmc
+
+    </sql>
+
+    <sql id="Jdjcjl_Column_List">
+        id,itembh,jcms,jcxslb,jcxsmc,wh1,wh2,wh3,wh4,wh,gaj,bcdw,dwmc,dwdz,sfaqzrr,zrrlxdh,xfaqglr,glrdh,lxr,
+        lxrdh,dwxzbh,dwxzmc,xfjdjcy,jcqstime,jcjstime,stjcry,zgry,jzmj,jzcs,jzgd,wfxw,clqk,pass,isflws,isfc,
+        remark,spacc,spname,sptime,zgdwid,acc,accname,intime,inip,chgacc,chgaccname,chgtime,chgip,versionnumber,
+        deleted,sparefiled1,sparefiled2,sparefiled3,sparefiled4,sparefiled5,yxmjzrq,ytxjzrq,row_version,frdb,lawid,zdmc
+    </sql>
+    <sql id="Wfxw_Column_List">
+       id ,wh1 ,wh2 ,wh3 ,wh4 ,wh ,zlid ,relationitembh ,fcitembh ,dwid ,flwsid ,flwslb ,wfxwmainid ,wfxwsubid ,
+       wfxx ,type ,state ,jcdate ,gzdate ,zgqk ,zgjcyname ,zgllyacc ,zgllyname ,zgintime ,acc ,accname ,intime ,
+       inip ,chgacc ,chgaccname ,chgtime ,zgdwid ,ip ,jcmode ,yhsort ,qybh ,deleted ,sparefiled1 ,sparefiled2 ,
+       sparefiled3 ,sparefiled4 ,sparefiled5 ,sparefiled6 ,sparefiled7 ,zong ,zhi ,ispcs ,row_version ,zdmc
+    </sql>
+
+    <select id="getAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Jcj_Column_List"/>
+        FROM xf_hj.jcj_ajxx
+    </select>
+
+    <select id="getAllByTime" resultMap="BaseResultMap" parameterType="string">
+        SELECT
+        <include refid="Jcj_Column_List"/>
+        FROM xf_hj.jcj_ajxx
+        WHERE lasj > '${_parameter}'
+    </select>
+    <select id="getAllByTimeAsc" resultMap="BaseResultMap" parameterType="string">
+        SELECT
+        <include refid="Jcj_Column_List"/>
+        FROM xf_hj.jcj_ajxx
+        WHERE lasj &gt;= '${_parameter}'
+    </select>
+    <select id="getAllByTimeDesc" resultMap="BaseResultMap" parameterType="string">
+        SELECT
+        <include refid="Jcj_Column_List"/>
+        FROM xf_hj.jcj_ajxx
+        WHERE lasj &lt;= '${_parameter}'
+    </select>
+
+    <select id="getAllJdjcjlByJcjstimeDesc" resultMap="JdjcjlResultMap" parameterType="string">
+        SELECT
+        <include refid="Jdjcjl_Column_List"/>
+        FROM xf_xfjd.xfjd_flwsj_jdjcjl
+        WHERE jcjstime &lt;= '${_parameter}'
+    </select>
+
+    <select id="getAllWfxwByJcdateDesc" resultMap="WfxwResultMap" parameterType="string">
+        SELECT
+        <include refid="Wfxw_Column_List"/>
+        FROM xf_xfjd.XFJD_FLWSJ_ZLGZTZS_WFXW
+        WHERE jcdate &lt;= '${_parameter}' AND jcdate>='2016-01-01 00:00:00'
+    </select>
+    <select id="getAllJdjcjlByJcjstimeAsc" resultMap="JdjcjlResultMap" parameterType="string">
+        SELECT
+        <include refid="Jdjcjl_Column_List"/>
+        FROM xf_xfjd.xfjd_flwsj_jdjcjl
+        WHERE jcjstime >= '${_parameter}'
+    </select>
+
+    <select id="getAllWfxwByJcdateAsc" resultMap="WfxwResultMap" parameterType="string">
+        SELECT
+        <include refid="Wfxw_Column_List"/>
+        FROM xf_xfjd.XFJD_FLWSJ_ZLGZTZS_WFXW
+        WHERE jcdate >= '${_parameter}' AND jcdate>='2016-01-01 00:00:00'
+    </select>
+
+    <select id="getCountOfWfxw" resultType="Integer" parameterType="string">
+        SELECT
+        count(1)
+        FROM xf_xfjd.XFJD_FLWSJ_ZLGZTZS_WFXW
+        WHERE jcdate &lt;= '${_parameter}' AND jcdate>='2016-01-01 00:00:00'
+--         AND jcdate>='2016-01-01 00:00:00'
+    </select>
+
+    <select id="getWfxwByPage" resultMap="WfxwResultMap">
+        SELECT
+        <include refid="Wfxw_Column_List"/>
+        FROM xf_xfjd.XFJD_FLWSJ_ZLGZTZS_WFXW
+        WHERE jcdate &lt;= #{jcdate} AND jcdate>='2016-01-01 00:00:00'
+        limit 10000 offset #{offset}
+    </select>
+
+    <insert id="saveAllUser" parameterType="java.util.List">
+        insert into USERTEST
+        ( id ,name)
+        <foreach collection="list" item="item" index="index" separator="UNION ALL">
+            SELECT
+            #{item.id ,jdbcType=VARCHAR}, #{item.name ,jdbcType=VARCHAR}
+        </foreach>
+    </insert>
+
+</mapper>
