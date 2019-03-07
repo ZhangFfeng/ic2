@@ -24,6 +24,10 @@ public class SwaggerConfig{
                 .build();
     }
 
+    /**
+     *
+     * @return
+     */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Spring Boot中使用Swagger2构建RESTful API")
