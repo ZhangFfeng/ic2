@@ -25,7 +25,7 @@ public class SwaggerConfig{
     }
 
     /**
-     *
+     * 测试
      * @return
      */
     private ApiInfo apiInfo() {
