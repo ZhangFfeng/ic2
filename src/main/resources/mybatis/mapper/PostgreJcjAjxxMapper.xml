@@ -281,4 +281,35 @@
         </foreach>
     </insert>
 
+    <insert id="saveAll" parameterType="java.util.List">
+        insert into xf_hj.jcj_ajxx
+        (id,jlzt,cszt,sjc,ajbh,jjjl_id,blajbh,lajjxh,zgjgbh,ywqkdm,xzqybh,jzjglxdm,lafsdm,lasj,afdz,ajlxdm,gis_x,gis_y,ajdjdm,czdxdm,bcxx
+        ,zysx,qxxxms,lfcs,jsmlsj,cdsj,ddxcsj,zdzksj,dccssj,hskzsj,jbpmsj,gdsj,rslc,zdyrs,ccrs,ssrs,jcrs,qzswrs,bdswrs,zhyy,sshrs,bdssrs,rsmj,bhmj,ccss
+        ,zzbh,bz,ajztdm,ajxz,hbzt,zddwid,rybgs,jjyxm,zhcs,hzsj,xdsj,jssj,bsxfjgdm,zqlyxfjgdm,syxx,jjts,pptz,zdmc)
+        <foreach collection="list" item="item" index="index" separator="UNION ALL">
+            SELECT
+            #{item.id,jdbcType=VARCHAR}, #{item.jlzt,jdbcType=VARCHAR}, #{item.cszt,jdbcType=VARCHAR},
+            #{item.sjc,jdbcType=VARCHAR}, #{item.ajbh,jdbcType=VARCHAR}, #{item.jjjlId,jdbcType=VARCHAR},
+            #{item.blajbh,jdbcType=VARCHAR}, #{item.lajjxh,jdbcType=VARCHAR}, #{item.zgjgbh,jdbcType=VARCHAR},
+            #{item.ywqkdm,jdbcType=VARCHAR}, #{item.xzqybh,jdbcType=VARCHAR}, #{item.jzjglxdm,jdbcType=VARCHAR},
+            #{item.lafsdm,jdbcType=VARCHAR}, #{item.lasj,jdbcType=VARCHAR}, #{item.afdz,jdbcType=VARCHAR},
+            #{item.ajlxdm,jdbcType=VARCHAR}, #{item.gisX,jdbcType=VARCHAR}, #{item.gisY,jdbcType=VARCHAR},
+            #{item.ajdjdm,jdbcType=VARCHAR}, #{item.czdxdm,jdbcType=VARCHAR}, #{item.bcxx
+,jdbcType=VARCHAR}, #{item.zysx,jdbcType=VARCHAR}, #{item.qxxxms,jdbcType=VARCHAR}, #{item.lfcs,jdbcType=VARCHAR},
+            #{item.jsmlsj,jdbcType=VARCHAR}, #{item.cdsj,jdbcType=VARCHAR}, #{item.ddxcsj,jdbcType=VARCHAR},
+            #{item.zdzksj,jdbcType=VARCHAR}, #{item.dccssj,jdbcType=VARCHAR}, #{item.hskzsj,jdbcType=VARCHAR},
+            #{item.jbpmsj,jdbcType=VARCHAR}, #{item.gdsj,jdbcType=VARCHAR}, #{item.rslc,jdbcType=VARCHAR},
+            #{item.zdyrs,jdbcType=VARCHAR}, #{item.ccrs,jdbcType=VARCHAR}, #{item.ssrs,jdbcType=VARCHAR},
+            #{item.jcrs,jdbcType=VARCHAR}, #{item.qzswrs,jdbcType=VARCHAR}, #{item.bdswrs,jdbcType=VARCHAR},
+            #{item.zhyy,jdbcType=VARCHAR}, #{item.sshrs,jdbcType=VARCHAR}, #{item.bdssrs,jdbcType=VARCHAR},
+            #{item.rsmj,jdbcType=VARCHAR}, #{item.bhmj,jdbcType=VARCHAR}, #{item.ccss
+,jdbcType=VARCHAR}, #{item.zzbh,jdbcType=VARCHAR}, #{item.bz,jdbcType=VARCHAR}, #{item.ajztdm,jdbcType=VARCHAR},
+            #{item.ajxz,jdbcType=VARCHAR}, #{item.hbzt,jdbcType=VARCHAR}, #{item.zddwid,jdbcType=VARCHAR},
+            #{item.rybgs,jdbcType=VARCHAR}, #{item.jjyxm,jdbcType=VARCHAR}, #{item.zhcs,jdbcType=VARCHAR},
+            #{item.hzsj,jdbcType=VARCHAR}, #{item.xdsj,jdbcType=VARCHAR}, #{item.jssj,jdbcType=VARCHAR},
+            #{item.bsxfjgdm,jdbcType=VARCHAR}, #{item.zqlyxfjgdm,jdbcType=VARCHAR}, #{item.syxx,jdbcType=VARCHAR},
+            #{item.jjts,jdbcType=VARCHAR}, #{item.pptz,jdbcType=VARCHAR}, #{item.zdmc,jdbcType=VARCHAR}
+        </foreach>
+    </insert>
+
 </mapper>

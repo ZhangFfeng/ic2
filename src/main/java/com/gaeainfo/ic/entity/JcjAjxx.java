@@ -1,9 +1,11 @@
 package com.gaeainfo.ic.entity;
 
+import java.io.Serializable;
+
 /**
  * 接处警检查信息
  */
-public class JcjAjxx {
+public class JcjAjxx implements Serializable {
     //记录ID
     private String id;
     //记录状态（0：可用  1：已删除）

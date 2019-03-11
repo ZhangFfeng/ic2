@@ -5,10 +5,12 @@ import com.gaeainfo.ic.entity.Jdjcjl;
 import com.gaeainfo.ic.entity.Wfxw;
 import com.gaeainfo.ic.mapper.mapper3.PostgreJcjAjxxMapper;
 import com.gaeainfo.ic.mapper.mapper4.OracleJcjAjxxMapper;
+import com.gaeainfo.ic.service.TestService;
 import com.gaeainfo.ic.util.CommonUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -142,5 +144,14 @@ public class SchedulingConfig {
 
 
     }
+
+
+//    @Scheduled(cron = "0/5 * * * * ?") // 每10分钟执行一次
+//    @Cacheable(value = "myCache",key = "'test1'")
+//    public List<JcjAjxx> scheduleCache() {
+//        List<JcjAjxx> list = postgreJcjAjxxMapper.getAll();
+//        System.out.println("scheduleCache==="+list.size());
+//        return list;
+//    }
 
 }
